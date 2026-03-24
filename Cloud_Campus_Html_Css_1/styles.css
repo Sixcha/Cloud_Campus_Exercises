@@ -1,3 +1,63 @@
-.form {
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: auto;
+}
+
+.searchbar {
     box-shadow: 1px 1px 0 black;
+    border-radius: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.midFix {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.submit {
+    border-radius: 5px;
 }

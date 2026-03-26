@@ -1,0 +1,117 @@
+/* ------------------------------------ */
+/* 🌐 Feuille de style de l'atelier CSS : Choisir entre Grid ou Flexbox */
+/* ------------------------------------ */
+
+/* Importation de la police d'écriture */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #f8fafc;
+  color: #64748b;
+}
+
+section {
+  margin-bottom: 47.8px;
+}
+
+/* À vous d'ajouter les sélecteurs et propriétés nécessaires
+   pour chaque section de la maquette */
+
+section {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px #ECEEF0;
+  /* border: 1px solid #E2E8F0; */
+  padding: 1em;
+
+}
+
+.blue {
+  background-color: #2563eb ;
+  border-radius: 5px;
+  color: white;
+  font-size: 100%;
+}
+
+.justification {
+  border-radius: 5px;
+  background-color: #DBEAFE;
+  padding: 0.8em;
+}
+
+.justification>p{
+  color: black;
+}
+
+.blueText{
+  color : #2563EB
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.padded {
+  padding: 1em;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+.centered {
+  justify-content: center;
+  width: 100%;
+}
+
+.centered>p{
+  margin: 0 10px;
+}
+
+
+.bordered {
+  border: 1px solid #E2E8F0;
+  border-radius: 10px;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin: 1em 0;
+  }
+  
+  .biggerGrid { grid-area: 2 / 2 / 3 / 4; } 
+
+.grid2>.blue{
+  padding: 1em;
+  text-align: center;
+}
+  

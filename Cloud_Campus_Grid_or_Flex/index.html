@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atelier Grid vs Flexbox</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- Section 1 : Navigation principale -->
+      <section class="section-navbar">
+        <h1>Navigation principale</h1>
+        <nav class="padded bordered">
+          <div class="flex">
+            <p class="blue">TechPro</p>
+            <p>Accueil</p>
+            <p>Produits</p>
+            <p>Services</p>
+            <p>Contact</p>
+          </div>
+          <div class="flex">
+            <p>Se connecter</p>
+            <p class="blue">S'inscrire</p>
+          </div>
+        </nav>
+        <div class="justification">
+          <p><span class="blueText">Justification :</span> Flex</p>
+        </div>
+        <!-- À compléter -->
+      </section>
+
+      <!-- Section 2 : Nos formations populaires -->
+      <section class="section-formations">
+        <h1>Nos formations populaires</h1>
+        <div class="justification">
+          <p><span class="blueText">Justification :</span> Flex</p>
+        </div>
+      </section>
+
+      <!-- .... -->
+      <section class="section-article">
+        <h1>Article a la une</h1>
+        <div class="grid">
+          <div class="blue"></div>
+        </div>
+        <div class="justification">
+          <p><span class="blueText">Justification :</span> Grid + Flex. La totalite est plus facile a generer a cause de la taille de l'elements a droite, mais l'interieure de cet element est facile a gerer en flex.</p>
+        </div>
+      </section>
+
+      <section class="section-technologies">
+        <h1>Technologies maitrisees</h1>
+        <div class="flex centered">
+          <p>React.js</p>
+          <p>Vue.js</p>
+          <p>Node.js</p>
+          <p>TypeScript</p>
+          <p>Python</p>
+          <p>Docker</p>
+          <p>AWS</p>
+        </div>
+        <div class="justification">
+          <p><span class="blueText">Justification :</span> Flexbox. C'est un groupe de 'buttons' tres organise et groupe au milieu. Plus simple avec Flex.</p>
+        </div>
+      </section>
+
+      <section class="section-projets">
+        <h1>Nos projets realises</h1>
+        <div class="grid2">
+          <div class="blue">Inspiration Visuelle</div>
+          <div class="blue">Grille Creative</div>
+          <div class="blue">Moodboard Produits</div>
+          <div class="blue">Univers en images</div>
+          <div class="biggerGrid blue">Collection en un coup d'oeil</div>
+        </div>
+        <div class="justification">
+          <p><span class="blueText">Justification :</span> Grid. Un des elements a une forme particuliere et ils sont tous alignes comme une simple grid.</p>
+        </div>
+      </section>
+
+    </main>
+  </body>
+</html>

@@ -12,20 +12,20 @@
       <section class="section-navbar">
         <h1>Navigation principale</h1>
         <nav class="padded bordered">
-          <div class="flex">
+          <div class="flex spaceEvenly">
             <p class="blue">TechPro</p>
             <p>Accueil</p>
             <p>Produits</p>
             <p>Services</p>
             <p>Contact</p>
           </div>
-          <div class="flex">
+          <div class="flex spaceEvenly">
             <p>Se connecter</p>
             <p class="blue">S'inscrire</p>
           </div>
         </nav>
         <div class="justification">
-          <p><span class="blueText">Justification :</span> Flex</p>
+          <p><span class="blueText">Justification :</span> Flexbox. Les elements ne sont pas mises d'une facon facile pour seulement une grid, c'est beaucoup plus simple a aligner avec justify-content.</p>
         </div>
         <!-- À compléter -->
       </section>
@@ -34,7 +34,7 @@
       <section class="section-formations">
         <h1>Nos formations populaires</h1>
         <div class="justification">
-          <p><span class="blueText">Justification :</span> Flex</p>
+          <p><span class="blueText">Justification :</span> Flexbox. Les elements sont positiones simplement et ceux l'interieur de chaque formation aussi. Un grid serais possible mais ca rajoute de l'a complexite a la totalite.</p>
         </div>
       </section>
 
@@ -42,7 +42,22 @@
       <section class="section-article">
         <h1>Article a la une</h1>
         <div class="grid">
-          <div class="blue"></div>
+          <div class="blue"> Intelligence Artificielle</div>
+          <div class="articleRight">
+            <div class="flex">
+              <p>Technologies</p>
+              <p>10 min de lecture</p>
+            </div>
+            <h2>L'Impact de l'IA sur le Développement Web en 2024</h2>
+            <p>L'intelligence artificielle révolutionne la façon dont nous concevons et développons des applications web. Découvrez les dernières innovations et leur impact sur l'industrie du développement...</p>
+            <div class="flex">
+              <p class="blue">ML</p>
+              <div>
+                <p>Marie Laurent</p>
+                <p>Lead Developer @ TechPro</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="justification">
           <p><span class="blueText">Justification :</span> Grid + Flex. La totalite est plus facile a generer a cause de la taille de l'elements a droite, mais l'interieure de cet element est facile a gerer en flex.</p>
@@ -51,14 +66,14 @@
 
       <section class="section-technologies">
         <h1>Technologies maitrisees</h1>
-        <div class="flex centered">
-          <p>React.js</p>
-          <p>Vue.js</p>
-          <p>Node.js</p>
-          <p>TypeScript</p>
-          <p>Python</p>
-          <p>Docker</p>
-          <p>AWS</p>
+        <div class="flex spaceEvenly centered marginVertical">
+          <p class="button">React.js</p>
+          <p class="button">Vue.js</p>
+          <p class="button">Node.js</p>
+          <p class="button">TypeScript</p>
+          <p class="button">Python</p>
+          <p class="button">Docker</p>
+          <p class="button">AWS</p>
         </div>
         <div class="justification">
           <p><span class="blueText">Justification :</span> Flexbox. C'est un groupe de 'buttons' tres organise et groupe au milieu. Plus simple avec Flex.</p>
@@ -75,7 +90,7 @@
           <div class="biggerGrid blue">Collection en un coup d'oeil</div>
         </div>
         <div class="justification">
-          <p><span class="blueText">Justification :</span> Grid. Un des elements a une forme particuliere et ils sont tous alignes comme une simple grid.</p>
+          <p><span class="blueText">Justification :</span> Grid. Un des elements est aussi grand que 2 elements et il y a 2 colonnes. Grid est parfait pour gerer ceci.</p>
         </div>
       </section>
 

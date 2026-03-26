@@ -72,6 +72,10 @@ nav {
 
 .flex{
   display: flex;
+
+}
+
+.spaceEvenly{
   justify-content: space-evenly;
   width: 50%;
 }
@@ -97,6 +101,15 @@ nav {
   grid-template-rows: 1fr;
   grid-column-gap: 0;
   grid-row-gap: 0;
+  margin: 1em 0;
+  border: 1px solid #E2E8F0 ;
+
+}
+.grid>.blue{
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .grid2 {
@@ -114,4 +127,25 @@ nav {
   padding: 1em;
   text-align: center;
 }
-  
+
+.button {
+  background-color: #F1F5F9;
+  color: #475569;
+  padding: 0.5rem;
+  border-radius: 1.5em;
+}
+
+.marginVertical {
+  margin: 1em 0;
+}
+
+.articleRight {
+  display: flex;
+  flex-direction: column;
+  grid-area: 1 / 2 / 2 / 4;
+  padding: 1em;
+}
+
+.articleRight>*{
+  margin: 0.5em;
+}

@@ -1,0 +1,89 @@
+/* ========= 1. Problème : Répétition des styles ========= */
+/* Même couleur et propriétés répétées, ce qui complique la maintenance */
+/* Comment éviter de réécrire la même couleur plusieurs fois ? */
+.header {
+  background-color: #3498db;
+  color: white;
+  padding: 20px;
+}
+
+.button {
+  background-color: #3498db; /* Même couleur que le header */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.link {
+  color: #3498db; /* Même couleur encore répétée */
+  text-decoration: none;
+}
+
+/* ========= 2. Manque de modularité ========= */
+/* Tous les styles sont regroupés dans un seul fichier */
+/* Comment organiser ces styles pour les rendre plus modulaires ? */
+.card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-content {
+  font-size: 16px;
+}
+
+/* ========= 3. Un problème ici ? ========= */
+/* Quel est-il ? */
+@media screen and (max-width: 768px) {
+  .header {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-title {
+    font-size: 20px;
+  }
+}
+
+/* ========= 4. Un problème ici ? ========= */
+/* Quel est-il ? Indice : Accessibilité */
+.text {
+  color: #888888; 
+}
+
+.button {
+  background-color: yellow;
+  color: white; 
+}
+
+/* ========= 5. Un problème ici ? ========= */
+/* Quel est-il ? Indice : Sélecteurs */
+.nav {
+  background-color: #222;
+}
+
+.nav ul {
+  list-style: none;
+}
+
+.nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+}
